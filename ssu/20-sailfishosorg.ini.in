@@ -1,0 +1,13 @@
+# -*- conf -*-
+[all]
+adaptation = %(releaseProtocol)://%(sailfishosorgDomain)/%(sailfishosorgPath)%(sailfishorgAdaptationOrg):/%(sailfishosorgFlavour):/hw:/%(vendor):/%(%(sailfishosorgFlavour):=testing?%(deviceFamily):/%(release)|%(deviceFamily))/latest_%(arch)
+
+[default-domain]
+sailfishosorgDomain = repo.sailfishos.org
+sailfishosorgFlavour = @FLAVOUR@
+sailfishosorgPath = obs/
+sailfishorgAdaptationOrg = @sailfishorgAdaptationOrg@
+
+[jolla-domain]
+sailfishosorgDomain = %(rndDomain)
+sailfishosorgPath =
