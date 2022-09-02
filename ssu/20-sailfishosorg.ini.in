@@ -1,6 +1,9 @@
 # -*- conf -*-
-[all]
+[release]
 adaptation = %(releaseProtocol)://%(sailfishosorgDomain)/%(sailfishosorgPath)%(sailfishorgAdaptationOrg):/%(sailfishosorgFlavour):/hw:/%(vendor):/%(%(sailfishosorgFlavour):=testing?%(deviceFamily):/%(release)|%(deviceFamily))/latest_%(arch)
+
+[rnd]
+adaptation = %(rndProtocol)://%(sailfishosorgDomain)/%(sailfishosorgPath)%(sailfishorgAdaptationOrg):/%(sailfishosorgFlavour):/hw:/%(vendor):/%(%(sailfishosorgFlavour):=testing?%(deviceFamily):/%(release)|%(deviceFamily))/latest_%(arch)
 
 [default-domain]
 sailfishosorgDomain = repo.sailfishos.org
