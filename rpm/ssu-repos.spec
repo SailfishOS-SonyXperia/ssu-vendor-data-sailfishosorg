@@ -60,8 +60,8 @@ Requires: ssu >= 0.44.7
 %install
 mkdir -p %{buildroot}%{_datadir}/ssu/repos.d/
 sed \
-    -e s/@FLAVOUR@/%{sailfishosorg_flavour}/g \
-    -e s/@sailfishorgAdaptationOrg@/%{sailfishosorg_adaptationOrg}/g \
+    -e "s|@FLAVOUR@|%{sailfishosorg_flavour}|g" \
+    -e "s|@sailfishorgAdaptationOrg@|%{sailfishosorg_adaptationOrg}|g" \
     ssu/20-sailfishosorg.ini.in > %{buildroot}%{_datadir}/ssu/repos.d/20-sailfishosorg.ini
 
 
